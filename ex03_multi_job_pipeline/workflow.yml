@@ -2,13 +2,13 @@ name: multi_job_pipline
 on: push
 
 jobs:
-  pipline1:
+  backend:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - run: echo "Testing backend"
 
-  pipline2:
+  frontend:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
