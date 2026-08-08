@@ -1,0 +1,12 @@
+name: build
+on: push
+
+jobs:
+  pipeline:
+  runs-on: ubuntu-latest
+
+  steps:
+    - uses: actions/checkout
+    - run: python --version
+    - run: pwd
+    - run: ls -la
