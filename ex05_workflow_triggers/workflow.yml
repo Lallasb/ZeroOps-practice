@@ -1,6 +1,11 @@
 name: workflow_triggers
-on: pull
-    push
+on:
+  push:
+    branch:
+    - main
+  pull:
+
+
 jobs:
   hello:
     runs-on: ubuntu-latest
