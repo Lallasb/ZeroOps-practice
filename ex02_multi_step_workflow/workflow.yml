@@ -1,0 +1,12 @@
+name: multi_srep
+on: push
+
+jobs:
+  multi_srep_workflow:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo "Repository: ${{ github.repository }}"
+      - run: echo "Branch: ${{ github.ref_name }}"
+      - run: echo "Commit SHA: ${{ github.sha }}"
