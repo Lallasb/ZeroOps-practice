@@ -2,8 +2,8 @@ name: hello
 on: push
 
 jobs:
-  hello
+  hello:
     runs-on: ubuntu-latest
 
     steps:
-      -run: echo "Welcom to ZeroOps!"
+      - run: echo "Welcom to ZeroOps!"
