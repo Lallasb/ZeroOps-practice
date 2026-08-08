@@ -1,0 +1,15 @@
+name: multi_job_pipline
+on: push
+
+jobs:
+  pipline1:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo "Testing backend"
+
+  pipline2:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo "Testing frontend"
