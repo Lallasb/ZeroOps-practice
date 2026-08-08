@@ -1,7 +1,7 @@
 name: workflow_triggers
 on:
   push:
-    branch:
+    branches:
     - main
   pull:
 
