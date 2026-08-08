@@ -7,6 +7,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-      - run: echo "Repository: ${{ github.repository }}"
-      - run: echo "Branch: ${{ github.ref_name }}"
-      - run: echo "Commit SHA: ${{ github.sha }}"
+      - run: echo "Repository ${{ github.repository }}"
+      - run: echo "Branch ${{ github.ref_name }}"
+      - run: echo "Commit SHA ${{ github.sha }}"
