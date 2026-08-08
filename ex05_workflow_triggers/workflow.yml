@@ -1,0 +1,9 @@
+name: workflow_triggers
+on: pull
+    push
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - run: echo "Welcome to ZeroOps!"
